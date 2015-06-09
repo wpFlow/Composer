@@ -1,0 +1,31 @@
+{
+	"name"             : "wpFlow/FrameworkInstaller",
+	"description"      : "A custom installer to handle deploying wpFlow Framework-Packages with composer",
+	"keywords"         : ["wpFlow"],
+	"type"             : "composer-plugin",
+	"license"          : "GPL-2.0+",
+	"minimum-stability": "dev",
+	"authors"          : [
+		{
+			"name" : "Dennis Schröder",
+			"email": "info@vectoholic.com"
+		}
+	],
+	"autoload"         : {
+		"psr-0": {
+			"wpFlow\\Composer\\": "src/"
+		}
+	},
+	"extra"            : {
+		"class": "wpFlow\\Composer\\wpFlowFrameworkPlugin"
+	},
+	"require"          : {
+		"composer-plugin-api": "1.0.0"
+	},
+	"require-dev"      : {
+		"composer/composer": "1.0.*@dev"
+	},
+	"conflict"         : {
+		"composer/installers": "<1.0.6"
+	}
+}
