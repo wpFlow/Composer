@@ -21,16 +21,16 @@ class wpFlowFrameworkInstaller extends LibraryInstaller {
 
 		if ( $this->composer->getPackage() ) {
 			$topExtra = $this->composer->getPackage()->getExtra();
-			if ( ! empty( $topExtra['wpFlow-install-dir'] ) ) {
-				$installationDir = $topExtra['wpFlow-install-dir'];
+			if ( ! empty( $topExtra['wpFlowFramework-install-dir'] ) ) {
+				$installationDir = $topExtra['wpFlowFramework-install-dir'];
 				if ( is_array( $installationDir ) ) {
 					$installationDir = empty( $installationDir[$prettyName] ) ? false : $installationDir[$prettyName];
 				}
 			}
 		}
 		$extra = $package->getExtra();
-		if ( ! $installationDir && ! empty( $extra['wpFlow-install-dir'] ) ) {
-			$installationDir = $extra['wpFlow-install-dir'];
+		if ( ! $installationDir && ! empty( $extra['wpFlowFramework-install-dir'] ) ) {
+			$installationDir = $extra['wpFlowFramework-install-dir'];
 		}
 		if ( ! $installationDir ) {
 			$installationDir = 'Packages/Framework';
