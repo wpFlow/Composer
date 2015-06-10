@@ -21,11 +21,5 @@
 	},
 	"require"          : {
 		"composer-plugin-api": "1.0.0"
-	},
-	"require-dev"      : {
-		"composer/composer": "1.0.*@dev"
-	},
-	"conflict"         : {
-		"composer/installers": "<1.0.6"
 	}
 }
