@@ -5,7 +5,8 @@ namespace wpFlow\Composer;
 use Composer\Installer\LibraryInstaller;
 use Composer\Package\PackageInterface;
 
-class wpFlowFrameworkInstaller extends LibraryInstaller {
+class wpFlowFrameworkInstaller extends LibraryInstaller 
+{
 
 	const TYPE = 'wpFlow-framework';
 

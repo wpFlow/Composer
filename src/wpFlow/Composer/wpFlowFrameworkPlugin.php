@@ -14,7 +14,8 @@ class wpFlowFrameworkPlugin implements PluginInterface {
 	 * @param Composer    $composer
 	 * @param IOInterface $io
 	 */
-	public function activate( Composer $composer, IOInterface $io ) {
+	public function activate( Composer $composer, IOInterface $io ) 
+	{
 		$installer = new wpFlowFrameworkInstaller( $io, $composer );
 		$composer->getInstallationManager()->addInstaller( $installer );
 	}
