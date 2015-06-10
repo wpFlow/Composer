@@ -2,7 +2,7 @@
 This is a [custom Composer installer](http://getcomposer.org/doc/articles/custom-installers.md) for wpFlow Distribution. It is a proof of concept, but feel free to use it.
 
 ### Usage
-To set up a custom WordPress build package to use this as a custom installer, add the following to your package's composer file:
+To set up a custom wpFlow Framework build package to use this as a custom installer, add the following to your package's composer file:
 
 ```
 "type": "wpFlow-framework",
